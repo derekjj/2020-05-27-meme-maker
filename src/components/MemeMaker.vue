@@ -6,15 +6,14 @@
     .row.border.p-2.rounded(v-else)
       .col-12
         .row
-          .col
-            .row
-              svg(height="400")
-                image(:href="selectedImage.url" height="400")            
-                text(:x="string.x + 'em'" :y="string.y + 'em'"
-                  v-for="(string,index) in strings"
-                  :fill="strings[index].color"
-                  :font-size="string.size + 'em'") {{string.text}}
-          .col
+          .col-lg-8
+            svg(height="400" width="100%")
+              image(:href="selectedImage.url" height="400")            
+              text(:x="string.x + 'em'" :y="string.y + 'em'"
+                v-for="(string,index) in strings"
+                :fill="strings[index].color"
+                :font-size="string.size + 'em'") {{string.text}}
+          .col-lg-4
             .row
               b-form-group(
               id="input-group-2"
