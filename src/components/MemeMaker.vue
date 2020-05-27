@@ -88,7 +88,7 @@ export default {
       image: null,
       images: [],
       selectedImage: null,
-      strings: [{ text: "Hello World", color: "white", x: 1, y: 1 , size:1}]
+      strings: [{ text: "Hello World", color: "white", x: 1, y: 1, size: 1 }]
     };
   },
   mounted() {
@@ -105,7 +105,7 @@ export default {
       this.selectedImage = this.images[index];
     },
     addString() {
-      this.strings.push({ text: "", color: "white", x: 1, y: 1 , size:1});
+      this.strings.push({ text: "", color: "white", x: 1, y: 1, size: 1 });
     },
     toggleShade(index) {
       this.strings[index].color === "white"
