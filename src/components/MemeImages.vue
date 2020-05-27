@@ -2,7 +2,7 @@
   .card.h-100
     .card-header.mt-1 {{image.name}}
     .card-body
-      img(:src="image.url" fluid-grow)
+      img(:src="image.url" fluid)
     .card-footer
       | Width: {{image.width}}
       | Height: {{image.height}}
